@@ -1,0 +1,21 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /api/construction
+spring:
+  application:
+    name: ak-construction-service
+  datasource:
+    host: 127.0.0.1:3306
+    url: jdbc:mysql://${spring.datasource.host}/review_db
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: MYSQL
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
