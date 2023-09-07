@@ -28,7 +28,7 @@ pipeline {
                     bat 'docker login -u syednawazisha -p %docker-hub%'
                 }
                    
-                   bat 'docker push akconstruction/ak-construction'
+                   bat 'docker push syednawazisha/akconstruction:ak-construction'
                 }
             }
         }
